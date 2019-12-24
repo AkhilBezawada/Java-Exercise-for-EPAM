@@ -1,0 +1,14 @@
+public String doubleChar(String str) {
+int n=str.length();
+char[] ch=new char[2*n];
+int count=0;
+for(int a=0;a<n;a++)
+{
+  ch[count]=str.charAt(a);
+  count++;
+  ch[count]=str.charAt(a);
+  count++;
+}
+String s=new String(ch);
+return s;
+}
